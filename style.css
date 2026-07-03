@@ -153,48 +153,45 @@ img {
 }
 
 @media (max-width: 768px) {
-    .corpo,
-    .sistemas,
-    .cards {
-        justify-content: center;
-        align-items: center;
+    .corpo {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
     .container {
         grid-template-columns: 1fr;
-        width: 100%;
+        justify-items: center;
     }
 
-    .item,
+    .container .item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sistemas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sistemas .item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .cards article {
         width: 100%;
         max-width: 350px;
         text-align: center;
     }
 
-     .cards article p {
-        text-align: center;
-    }
-
     img {
         width: 150px;
         height: 150px;
-    }
-
-    .cabecalho,
-    .corpo,
-    .habilidades,
-    .projetos,
-    .extras,
-    .rodape {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        text-align: center;
     }
 }
